@@ -1,4 +1,4 @@
-package ru.netology.javaqadiplom;
+package ru.netology.javateam;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
