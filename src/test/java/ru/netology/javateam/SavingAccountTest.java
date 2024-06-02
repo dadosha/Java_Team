@@ -187,4 +187,16 @@ public class SavingAccountTest {
 
         Assertions.assertEquals(200, account.yearChange());
     }
+
+    @Test
+    public void initialBalanceMoreMaxBalance() {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> {
+            new SavingAccount(3_000,
+                    0,
+                    2_000,
+                    5);
+        });
+    }
+
 }
+
